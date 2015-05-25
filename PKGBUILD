@@ -9,8 +9,8 @@ url="https://github.com/luebking/qarma"
 license=('GPL')
 depends=('qt5-base' 'qt5-x11extras')
 makedepends=('git')
-provides=('qarma' 'zenity')
-conflicts=('zenity' 'qarma')
+#provides=('qarma' 'zenity')
+#conflicts=('zenity' 'qarma')
 source=("git://github.com/luebking/qarma.git")
 sha256sums=('SKIP')
 
