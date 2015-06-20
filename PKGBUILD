@@ -1,6 +1,5 @@
 
-pkgname=qarma-git
-_gitname=qarma
+pkgname=qarma
 pkgver=1.0.1
 pkgrel=1
 pkgdesc="A drop-in replacement clone for zenity, for easy user interfaces scripting, written in Qt4/5"
@@ -9,8 +8,6 @@ url="https://github.com/luebking/qarma"
 license=('GPL')
 depends=('qt5-base' 'qt5-x11extras')
 makedepends=('git')
-#provides=('qarma' 'zenity')
-#conflicts=('zenity' 'qarma')
 source=("git://github.com/luebking/qarma.git")
 sha256sums=('SKIP')
 
@@ -21,13 +18,13 @@ pkgver() {
 
 build()
 {
-    cd $srcdir/$_gitname
+    cd $srcdir/$pkgname
     qmake-qt5
     make
     }
 
 package() {
-    cd $srcdir/$_gitname
+    cd $srcdir/$pkgname
     strip qarma
     mkdir -p $pkgdir/usr/bin
     cp qarma $pkgdir/usr/bin
