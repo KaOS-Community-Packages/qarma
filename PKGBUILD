@@ -1,6 +1,6 @@
 
 pkgname=qarma
-pkgver=1.0.1
+pkgver=22
 pkgrel=1
 pkgdesc="A drop-in replacement clone for zenity, for easy user interfaces scripting, written in Qt4/5"
 arch=('x86_64')
@@ -12,7 +12,7 @@ source=("git://github.com/luebking/qarma.git")
 sha256sums=('SKIP')
 
 pkgver() {
-    cd ${_gitname}
+    cd ${pkgname}
     git rev-list --count HEAD
     }
 
