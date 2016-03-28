@@ -1,6 +1,6 @@
 
 pkgname=qarma
-pkgver=3
+pkgver=22
 pkgrel=1
 pkgdesc="A drop-in replacement clone for zenity, for easy user interfaces scripting, written in Qt4/5"
 arch=('x86_64')
